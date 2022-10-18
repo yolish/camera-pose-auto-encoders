@@ -2,7 +2,7 @@
 ### Overview 
 This repository provides an official implementation for:
 - [Camera Pose Auto-Encoders](https://arxiv.org/abs/2207.05530) (PAEs), _accepted to ECCV 2022_
-- Iterative Absolute Pose Regression (iAPR), which extends our ECCV22 work (under submission, link to arxiv coming soon),
+- Iterative Absolute Pose Regression (iAPR), which extends our ECCV22 work,
 a new class of APRs, combining absolute pose regression and relative pose regression, _without_ extra image or pose storage.
 
 ### Introduction
