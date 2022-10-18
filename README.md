@@ -69,7 +69,7 @@ We support MobileNet and ResNet50.
 
 After training, you can test your trained model by running:
 ```
-python main.py posenet test models/backbones/efficient-net-b0.pth <path to the CambridgeLandmarks dataset> datasets/CambridgeLandmarks/abs_cambridge_pose_sorted.csv_KingsCollege_test.csv
+python main_train_test_apr.py posenet test models/backbones/efficient-net-b0.pth <path to the CambridgeLandmarks dataset> datasets/CambridgeLandmarks/abs_cambridge_pose_sorted.csv_KingsCollege_test.csv
 CambridgeLandmarks_config.json --checkpoint_path posenet_effnet_apr_kings_college.pth
 ```
 In order to train and test **MS-Transformer**, please follow the instructions 
@@ -86,7 +86,7 @@ CambridgeLandmarks_config.json posenet_effnet_apr_kings_college.pth
 ```
 You can then evaluate it and compare it to its teacher, by running:
 ```
-main_learn_pose_encoding.py posenet test models/backbones/efficient-net-b0.pth
+python main_learn_pose_encoding.py posenet test models/backbones/efficient-net-b0.pth
 <path to dataset> datasets/CambridgeLandmarks/abs_cambridge_pose_sorted.csv_KingsCollege_test.csv CambridgeLandmarks_config.json posenet_effnet_apr_kings_college.pth
 --encoder_checkpoint_path posenet_effnet_apr_kings_college.pth
 ```
@@ -94,7 +94,7 @@ main_learn_pose_encoding.py posenet test models/backbones/efficient-net-b0.pth
 Similarly, you can train a multi-scene PAE with MS-Transformer.
 For example, training on the 7Scenes dataset:
 ```
-main_learn_multiscene_pose_encoding.py
+python main_learn_multiscene_pose_encoding.py
 ems-transposenet
 train
 models/backbones/efficient-net-b0.pth
@@ -105,7 +105,7 @@ ems_transposenet_7scenes_pretrained.pth
 ```
 and then evaluate it by running: 
 ```
-main_learn_multiscene_pose_encoding.py
+python main_learn_multiscene_pose_encoding.py
 ems-transposenet
 test
 /models/backbones/efficient-net-b0.pth
