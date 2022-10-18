@@ -139,7 +139,7 @@ mstransformer_7scenes_pose_encoder.pth
 We propose a PAE-based RPR model (Fig. 3) to estimate the relative motion between 
 an encoded pose and a query image.
  <p align="center">
- <img src="figs/pae_rpr.png" width="400" height="250"> 
+ <img src="figs/pae_rpr.png" width="250" height="400"> 
  </p>
  <p align = "center">
 Fig. 3: Our proposed PAE-based RPR architecture, for implementing iAPR.
