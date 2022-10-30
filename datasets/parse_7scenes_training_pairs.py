@@ -139,7 +139,7 @@ for s in ['chess', 'fire', 'heads', 'office', 'pumpkin', 'redkitchen', 'stairs']
     print(s)
     scene_indices = np.where(scenes == s)[0]
     n = len(scene_indices)
-    for j in range(n-1):
+    for j in range(n):
         idx1 = scene_indices[j]
         pose1 = poses[idx1]
         img1_path = img_paths[idx1]
