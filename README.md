@@ -1,9 +1,9 @@
 ## Camera Pose Auto-Encoders (PAEs)
 ### Overview 
 This repository provides an official implementation for:
+-  Relative Pose Regression with Pose Auto-Encoders: Enhancing Accuracy and
+Data Efficiency for Retail Applications, _accepted to ICCVW 2025_
 - [Camera Pose Auto-Encoders](https://arxiv.org/abs/2207.05530) (PAEs), _accepted to ECCV 2022_
-- Iterative Absolute Pose Regression (iAPR), which extends our ECCV22 work,
-a new class of APRs, combining absolute pose regression and relative pose regression, _without_ extra image or pose storage.
 
 ### Introduction
 **Camera Pose Auto-Encoders (PAEs)** are multi-layer perceptrons (MLPs), trained via a Teacher-Student approach
@@ -27,7 +27,9 @@ information at a minimal cost.
 **Iterative Absolute Pose Regression** (iAPR) is a new class of APRs, which combines absolute 
 pose regression and relative pose regression, _without_ additional image or pose storage. Specifically, it applies 
 a PAE-based RPR on the initial APR estimate for one or more iterations (Fig. 2). iAPR achieves a new state-of-the-art 
-(SOTA) localization accuracy for APRs on the 7Scenes dataset, _even when trained with only 30% of the data_.
+(SOTA) localization accuracy for APRs on the 7Scenes dataset, _even when trained with only 30% of the data_. 
+**This approach is descrived in our paper: Relative Pose Regression with Pose Auto-Encoders: Enhancing Accuracy and
+Data Efficiency for Retail Applications**
 
  <p align="center">
  <img src="figs/iapr.png" width="400" height="100"> 
@@ -221,4 +223,5 @@ reconstruct_config.json pretrained_models/mstransformer_cambridge_pose_encoder.p
 ```
 
 You can download the pre-trained ShopFacade decoder from [here](https://drive.google.com/file/d/1okm_sN_JXrSD2bpTHBYDghl99pIj87YX/view?usp=sharing) 
+
 
